@@ -842,7 +842,7 @@ footer{
     padding: 100px 0;
    }
     .line__top {
-        top: -20%;
+        top: -33%;
     }
    .mb-s{
     margin-bottom: 60px;
@@ -891,6 +891,9 @@ footer{
     }
 }
 @media screen and (max-width:475px) {
+    .line__top {
+        top: -30%;
+    }
     h3{
         font-size: 22px;
     }
@@ -905,5 +908,10 @@ footer{
     .tab label::after {
         right: 35px;
         transform: translateY(-100%);
+    }
+}
+@media screen and (max-width:410px) {
+    .line__top {
+        top: -20%;
     }
 }
