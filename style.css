@@ -526,32 +526,24 @@ iframe{
     top:0;
     height:100%;
     width:100%;
-    position:absolute;
-    
+    position:absolute; 
 }
-.connetc-wrapper{
+.connect-section .container {
     position: relative;
-    width: 100%;
-}
-/* .connect-section .container{
-    position: absolute;
-    top: 0;
-    left: 0;
-} */
-.connect__wrap{
+   }
+.connect__wrap {
     display: flex;
     flex-direction: column;
     background: var(--blue);
     position: absolute;
-    top: 50%;
-    /* left: 140px; */
+    bottom: 100%;
     left: 0;
     border-radius: 20px;
     min-height: 400px;
     padding: 60px;
     max-width: 481px;
     justify-content: space-between;
-    transform: translate(-50%, 0);
+    transform: translate(0 , -50%);
     width: 100%;
 }
 .connect{
