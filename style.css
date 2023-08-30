@@ -491,7 +491,7 @@ nav a:hover{
 .tab input:checked ~ .tab__content {
     max-height: 100vh;
     padding: 65px 40px 20px 40px;
-    margin-top: -40px;
+    margin-top: -35px;
 }
 .tab label:hover::after {
     content: url(./images/white-plus.svg);
@@ -842,7 +842,7 @@ footer{
     padding: 100px 0;
    }
     .line__top {
-        top: -35%;
+        top: -20%;
     }
    .mb-s{
     margin-bottom: 60px;
