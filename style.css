@@ -909,6 +909,9 @@ footer{
         right: 35px;
         transform: translateY(-100%);
     }
+    .tab input:checked ~ .tab__content {
+        margin-top: -29px;
+    }
 }
 @media screen and (max-width:410px) {
     .line__top {
