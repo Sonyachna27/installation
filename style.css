@@ -365,12 +365,14 @@ nav a:hover{
     border-color: var(--white);
 }
 .services__text button:hover{
-    color: var(--blue);
-    border-color: var(--blue);
+    color: var(--orange);
+    border-color: transparent;
+    background: var(--white);
     transition: all .3s;
 }
 .services__bottom img{
     border-radius: 20px;
+    width: 100%;
 }
 .work__wrapper{
     display: flex;
@@ -378,7 +380,6 @@ nav a:hover{
     align-items: center;
     gap: 40px;
 }
-
 .btn__wraper{
     display: flex;
     gap: 20px;
@@ -490,8 +491,8 @@ nav a:hover{
 
 .tab input:checked ~ .tab__content {
     max-height: 100vh;
-    padding: 65px 40px 20px 40px;
-    margin-top: -35px;
+    padding: 52.5px 40px 20px 40px;
+    margin-top: -37.5px;
 }
 .tab label:hover::after {
     content: url(./images/white-plus.svg);
@@ -528,14 +529,23 @@ iframe{
     position:absolute;
     
 }
+.connetc-wrapper{
+    position: relative;
+    width: 100%;
+}
+/* .connect-section .container{
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
 .connect__wrap{
     display: flex;
     flex-direction: column;
     background: var(--blue);
     position: absolute;
-    top: 150px;
+    top: 50%;
     /* left: 140px; */
-    left: 50%;
+    left: 0;
     border-radius: 20px;
     min-height: 400px;
     padding: 60px;
@@ -565,17 +575,8 @@ iframe{
 .social__block{
     display: flex;
     gap: 10px;
-    /* min-height: 45px; */
-}
-.social__block a:hover svg path,
-.connect__link:hover svg path{
-    fill: #FFF;
 }
 
-.social__block a:hover .orange,
-.connect__link:hover .orange{
-    fill: var(--orange);
-}
 .book-section{
     padding: 140px 0;
     background: var(--orange);
@@ -659,15 +660,19 @@ footer{
    flex-direction: column;
    align-items: center;
 }
-.about__bottom-wrapper{
-    max-width: 500px;
+.about__top{
+    max-width: 100%;
 }
+.about__block{
+    justify-content: flex-start;
+}
+
 .services__blocks{
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 .services__bottom{
-    padding: 60px 0;
+    padding: 0;
 }
 .services__text {
     padding: 60px 0;
@@ -714,10 +719,13 @@ footer{
         background: var(--blue);
     }
     .adaptive-nav .nav__link{
-        font-size: 40px;
+        font-size: 16px;
     }
     .adaptive-nav .tel__header{
         margin-top: 100px;
+    }
+    .adaptive-nav a:nth-last-child(2){
+        margin-bottom: 40px;
     }
     .btn1{
         transition-duration: 0.5s;
