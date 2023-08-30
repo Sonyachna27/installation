@@ -108,7 +108,7 @@ h1{
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 20px;
-    max-width: 523px;
+    /* max-width: 523px; */
 }
 h1 span{
     color:var(--orange);
@@ -153,7 +153,7 @@ p{
     color: var(--white);
     font-weight: 600;
     transition: all .3s;
-    padding: 10px;
+    padding: 9.5px 10px;
     border-radius: 5px;
     width: 100%;
     max-width: 171px;
@@ -185,6 +185,7 @@ nav a:hover{
 }
 .header__tel{
     border: 1px solid var(--orange);
+    /* padding: 9.5px 10px; */
 }
 .header__mob,
 .adaptive-nav{
@@ -206,10 +207,11 @@ nav a:hover{
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 523px;
+    max-width: 500px;
 }
 .main__text-wrap p{
     color: var(--white);
+    font-weight: 400;
 }
 .line__top{
     position: absolute;
@@ -219,7 +221,7 @@ nav a:hover{
 .line__top1{
     position: absolute;
         position: absolute;
-        right: 100px;
+        right: 0px;
         top: -15px;
 }
 .about h2{
@@ -296,7 +298,7 @@ nav a:hover{
 .order-btn{
     background: transparent;
     border-color: var(--orange);
-    padding: 15px 39px;
+    padding: 14.5px 39px;
     max-width: 217px;
     width: 100%;
     border-radius: 10px;
@@ -500,7 +502,7 @@ iframe{
 .connect__wrap{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* gap: 10px; */
     background: var(--blue);
     position: absolute;
     top: 150px;
@@ -508,15 +510,22 @@ iframe{
     border-radius: 20px;
     min-height: 400px;
     padding: 60px;
-    max-width: 481px
+    max-width: 481px;
+    justify-content: space-between;
 }
-
+.connect{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .connect__link{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
     color: var(--white);
+    margin-top: auto;
+   
 }
 .connect__link svg{
     min-width: 40px;
@@ -525,6 +534,7 @@ iframe{
 .social__block{
     display: flex;
     gap: 10px;
+    /* min-height: 45px; */
 }
 .social__block a:hover svg path,
 .connect__link:hover svg path{
