@@ -909,12 +909,13 @@ footer{
    h3{
     font-size: 20px;
    }
-   .about__block h3 span{
-    font-size: 20px;
-   }
    .about__block span {
     font-size: 12px;
     }
+   .about__block h3 span{
+    font-size: 20px;
+   }
+   
    p{
     font-size: 12px;
    }
