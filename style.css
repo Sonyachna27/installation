@@ -226,7 +226,6 @@ nav a:hover{
 }
 .line__top1{
     position: absolute;
-        position: absolute;
         right: 0px;
         top: -550%;
 }
@@ -415,6 +414,9 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     gap: 60px;
+}
+.faq__container h2{
+    text-align: center;
 }
 .tabs {
     display: flex;
@@ -751,6 +753,7 @@ footer{
         transform: translateX(0);
     }
     
+
     .icon {
         position: absolute;
         width: 40px; 
@@ -760,38 +763,38 @@ footer{
     }
     
     .icon-left {
-        transition-duration: 0.5s;
+        transition-duration: 0.3s;
         position: absolute;
-        width: 20px; 
+        width: 30px; 
         height: 3px;
         top: 18px; 
         background-color: var(--white);
-        left: 10px; 
+        left: 7px; 
     }
     
     .icon-right {
-        transition-duration: 0.5s;
+        transition-duration: 0.3s;
         position: absolute;
-        width: 20px; 
+        width: 30px; 
         height: 3px;
         top: 18px; 
         background-color: var(--white);
-        left: 10px; 
+        left: 7px; 
     }
 
     .icon-right::before{
-        transition-duration: 0.5s;
+        transition-duration: 0.3s;
         position: absolute;
-        width: 20px;
+        width: 30px;
         height: 3px;
         background-color: var(--white);
         content: "";
         top: -10px;
     }
     .icon-left::before{
-        transition-duration: 0.5s;
+        transition-duration: 0.3s;
         position: absolute;
-        width: 20px;
+        width: 30px;
         height: 3px;
         background-color: var(--white);
         content: "";
@@ -799,7 +802,7 @@ footer{
     }
     
     .icon-right::after{
-        transition-duration: 0.5s;
+        transition-duration: 0.3s;
         position: absolute;
         width: 20px;
         height: 3px;
@@ -808,9 +811,9 @@ footer{
         top: 10px;
     }
     .icon-left::after{
-            transition-duration: 0.5s;
+            transition-duration: 0.3s;
             position: absolute;
-            width: 20px;
+            width: 30px;
             height: 3px;
             background-color: var(--white);
             content: "";
@@ -818,10 +821,10 @@ footer{
     }
     .open .icon-left,
     .open .icon-right{
-        transition-duration: 0.5s;
+        transition-duration: 0.3s;
         background: transparent;
-    }
-    .open .icon-right::before {
+    } 
+    /* .open .icon-right::before {
         transform: rotateZ(-46deg) translate(0px, 6px);
     }
     .open .icon-right::after {
@@ -832,7 +835,19 @@ footer{
     }
     .open .icon-left::after {
         transform: rotateZ(-46deg)  translate(-5px, -8px);
+    } */
+    .open .icon-left::before {
+        transform: rotateZ(44deg) translate(-3px, 13px);
     }
+    .open .icon-left::after {
+        transform: rotateZ(-46deg) translate(-4px, -11px);
+    }
+    .open .icon-right::before {
+        transform: rotateZ(-46deg) translate(-7px, 3px);
+    }
+    .open .icon-right::after {
+        transform: rotateZ(46deg) translate(2px, -5px);
+    } 
     .services .order-btn {
         max-width: 217px;
     }
