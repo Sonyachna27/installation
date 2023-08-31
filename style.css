@@ -824,18 +824,6 @@ footer{
         transition-duration: 0.3s;
         background: transparent;
     } 
-    /* .open .icon-right::before {
-        transform: rotateZ(-46deg) translate(0px, 6px);
-    }
-    .open .icon-right::after {
-        transform: rotateZ(46deg) translate(2px, -4px);
-    }
-    .open .icon-left::before {
-        transform: rotateZ(46deg) translate(-3px, 10px);
-    }
-    .open .icon-left::after {
-        transform: rotateZ(-46deg)  translate(-5px, -8px);
-    } */
     .open .icon-left::before {
         transform: rotateZ(44deg) translate(-3px, 13px);
     }
@@ -917,15 +905,16 @@ footer{
    h2{
     font-size: 24px;
    }
-   .about__block span {
-    font-size: 12px;
-    }
+  
    h3{
     font-size: 20px;
    }
-   h3 span{
+   .about__block h3 span{
     font-size: 20px;
    }
+   .about__block span {
+    font-size: 12px;
+    }
    p{
     font-size: 12px;
    }
