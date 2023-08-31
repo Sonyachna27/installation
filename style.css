@@ -273,6 +273,9 @@ nav a:hover{
     justify-content: space-between;
     gap: 60px;
 }
+.about__bottom h2 {
+    max-width: 560px;
+}
 .about__bottom img{
     max-width: 100%;
     border-radius: 20px;
@@ -641,6 +644,9 @@ footer{
     .about__bottom img{
         max-width: 600px;
     }
+    .about h2 {
+        max-width: 600px;
+    }
 }
 
 @media screen and (max-width:1023px) {
@@ -660,10 +666,11 @@ footer{
     left: inherit;
     right: 36px;
 }
-.about__top-wrapper,
-.about__bottom {
+.about__top-wrapper {
    flex-direction: column;
-   align-items: center;
+}
+.about__bottom{
+    flex-direction: column;
 }
 .about__top{
     max-width: 100%;
@@ -674,7 +681,7 @@ footer{
 
 .services__bottom{
     flex-direction: column-reverse;
-    align-items: center;
+    
 }
 .services__bottom img{
     max-width:  100%;
@@ -689,15 +696,21 @@ footer{
 }
 .services__text {
     padding: 60px 0;
-    max-width: 500px;
+    max-width: 560px;
 }
 .work__images {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+.services__text {
+    padding: 40px;
+    /* max-width: 100%; */
+}
 }
 @media screen and (max-width:990px) {
-
+    .main{
+        padding: 263px 0;
+    }
     .header__wrapper{
         display: none;
     }
@@ -743,7 +756,7 @@ footer{
             transition: transform 0.5s; 
             flex-direction: column;
             padding: 10px 0;
-            gap: 10px;
+            gap: 15px;
             justify-content: center;
             align-items: center;
             z-index: 2;
@@ -766,7 +779,7 @@ footer{
         transition-duration: 0.3s;
         position: absolute;
         width: 30px; 
-        height: 3px;
+        height: 1.5px;
         top: 18px; 
         background-color: var(--white);
         left: 7px; 
@@ -776,7 +789,7 @@ footer{
         transition-duration: 0.3s;
         position: absolute;
         width: 30px; 
-        height: 3px;
+        height: 1.5px;
         top: 18px; 
         background-color: var(--white);
         left: 7px; 
@@ -786,7 +799,7 @@ footer{
         transition-duration: 0.3s;
         position: absolute;
         width: 30px;
-        height: 3px;
+        height: 1.5px;
         background-color: var(--white);
         content: "";
         top: -10px;
@@ -795,7 +808,7 @@ footer{
         transition-duration: 0.3s;
         position: absolute;
         width: 30px;
-        height: 3px;
+        height: 1.5px;
         background-color: var(--white);
         content: "";
         top: -10px;
@@ -805,7 +818,7 @@ footer{
         transition-duration: 0.3s;
         position: absolute;
         width: 20px;
-        height: 3px;
+        height: 1.5px;
         background-color: var(--white);
         content: "";
         top: 10px;
@@ -814,7 +827,7 @@ footer{
             transition-duration: 0.3s;
             position: absolute;
             width: 30px;
-            height: 3px;
+            height: 1.5px;
             background-color: var(--white);
             content: "";
             top: 10px;
@@ -886,7 +899,9 @@ footer{
 }
 
 @media screen and (max-width:625px){
-   .main,
+    .main{
+        padding: 172px 0;
+    }
    .services,
    .book-section,
    .footer-container{
@@ -899,11 +914,15 @@ footer{
    .mb-s{
     margin-bottom: 70px;
    }
+   .mb-h{
+    margin-bottom: 30px;
+   }
     h1{
     font-size: 36px;
    }
    h2{
     font-size: 24px;
+    margin-bottom: 30px;
    }
   
    h3{
@@ -915,7 +934,13 @@ footer{
    .about__block h3 span{
     font-size: 20px;
    }
-   
+   .about__bottom{
+    gap: 30px;
+   }
+   .work__wrapper h2{
+    max-width: 230px;
+    text-align: center;
+   }
    p{
     font-size: 12px;
    }
@@ -937,7 +962,7 @@ footer{
     .btn__wraper {
         flex-wrap: nowrap;
         overflow: hidden;
-        overflow-y: scroll;
+        overflow-x: scroll;
     }
     .white-btn{
         white-space: nowrap;
@@ -962,6 +987,7 @@ footer{
     }
     .connect__wrap {
         min-height: 350px;
+        padding: 40px 20px;
     }
     .footer .header__nav{
         flex-direction: column;
