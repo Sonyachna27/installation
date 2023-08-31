@@ -533,7 +533,7 @@ iframe{
 .connect-wrapper{
     position: absolute;
     bottom: 150px;
-    width: 100%;
+    width: fit-content;
 }
 .connect__wrap {
     display: flex;
@@ -677,7 +677,6 @@ footer{
 }
 .services__text {
     padding: 40px;
-    /* max-width: 100%; */
 }
 .line__top1 {
     right: -68px;
@@ -708,7 +707,8 @@ footer{
         background: var(--blue);
     }
     .adaptive-nav .nav__link{
-        font-size: 16px;
+        font-size: 36px;
+        line-height: 54px;
     }
     .adaptive-nav .tel__header{
         margin-top: 100px;
@@ -732,9 +732,10 @@ footer{
             transform: translateX(-100%);
             transition: transform 0.5s; 
             flex-direction: column;
-            padding: 10px 0;
+            padding: 100px 20px;
             gap: 15px;
             /* justify-content: center; */
+           
             align-items: center;
             z-index: 2;
             display: flex; 
@@ -872,10 +873,6 @@ footer{
        }
       
 }
-@media screen and (max-width:890px) {
-   
-    
-}
 
 @media screen and (max-width:625px){
     .main{
@@ -940,6 +937,7 @@ footer{
     }
     .btn__wraper {
         flex-wrap: nowrap;
+        margin-bottom: 0;
         overflow: hidden;
         overflow-x: scroll;
         min-width: calc(100vw - 20px);
@@ -951,6 +949,13 @@ footer{
     }
     .work__wrapper {
         gap: 30px;
+    }
+    .adaptive-nav {
+            padding: 60px 20px; 
+    }
+    .adaptive-nav .nav__link{
+        line-height: 24px;
+        font-size: 16px;
     }
 }
 @media screen and (max-width:525px){
