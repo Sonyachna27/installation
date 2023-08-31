@@ -853,9 +853,10 @@ footer{
         flex-direction: column;
 
     }
-    .connect-wrapper{
+    .connect-wrapper {
         position: relative;
         bottom: 0;
+        width: 100%;
     }
     .connect__wrap {
         /* position: relative;
