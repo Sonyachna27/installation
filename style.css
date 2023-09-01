@@ -109,7 +109,6 @@ h1{
     font-weight: 700;
     margin-bottom: 20px;
     position: relative;
-    /* max-width: 523px; */
 }
 h1 span{
     color:var(--orange);
@@ -120,7 +119,6 @@ h2{
     font-size: 48px;
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 20px;
 }
 h2 span{
     color: var(--orange);
@@ -190,7 +188,6 @@ nav a:hover{
 }
 .header__tel{
     border: 1px solid var(--orange);
-    /* padding: 9.5px 10px; */
 }
 .header__mob,
 .adaptive-nav{
@@ -275,6 +272,7 @@ nav a:hover{
 }
 .about__bottom h2 {
     max-width: 560px;
+    margin-bottom: 20px;
 }
 .about__bottom img{
     max-width: 100%;
@@ -347,6 +345,7 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 40px;
 }
 .services__text h2{
     font-size: 32px;
@@ -450,7 +449,6 @@ nav a:hover{
     color: var(--white);
     font-weight: 500;
     width: 100%;
-    /* text-wrap: balance; */
 }
 
 .tab label::after {
@@ -490,7 +488,6 @@ nav a:hover{
     font-weight: 500;
     transition: all .3s;
 }
-
 .tab input:checked ~ .tab__content {
     max-height: 100vh;
     padding: 52.5px 40px 20px 40px;
@@ -509,7 +506,6 @@ nav a:hover{
     position: relative;
 }
 .connect-section h2{
-margin-bottom: 60px;
 text-align: center;
 }
 iframe{
@@ -518,18 +514,15 @@ iframe{
     padding: 0;
     margin: 0;
 }
-
  iframe{
     min-height: 700px;
     max-height: 700px;
     height:100%;
     width:100%;
-    
 }
 .connect-section .container {
     position: relative;
    }
-
 .connect-wrapper{
     position: absolute;
     bottom: 150px;
@@ -578,7 +571,6 @@ iframe{
 }
 footer{
     background: var(--blue);
-    
 }
 .footer-container{
     display: flex;
@@ -619,7 +611,6 @@ footer{
         max-width: 600px;
     }
 }
-
 @media screen and (max-width:1023px) {
     .main__img{
         display: none;
@@ -634,7 +625,6 @@ footer{
 .main__text-wrap{
     max-width: 100%;
 }
-
 .line__top{
     left: inherit;
     right: 36px;
@@ -651,10 +641,8 @@ footer{
 .about__block{
     justify-content: flex-start;
 }
-
 .services__bottom{
     flex-direction: column-reverse;
-    
 }
 .services__bottom img{
     max-width:  100%;
@@ -668,15 +656,13 @@ footer{
     padding: 0;
 }
 .services__text {
-    padding: 60px 0;
     max-width: 560px;
+    /* gap: 40px; */
+    padding: 40px;
 }
 .work__images {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-}
-.services__text {
-    padding: 40px;
 }
 .line__top1 {
     right: -68px;
@@ -734,8 +720,7 @@ footer{
             flex-direction: column;
             padding: 100px 20px;
             gap: 15px;
-            /* justify-content: center; */
-           
+            justify-content: center;
             align-items: center;
             z-index: 2;
             display: flex; 
@@ -743,8 +728,6 @@ footer{
     .open .adaptive-nav {
         transform: translateX(0);
     }
-    
-
     .icon {
         position: absolute;
         width: 40px; 
@@ -752,7 +735,6 @@ footer{
         top: 0;
         left: 0; 
     }
-    
     .icon-left {
         transition-duration: 0.3s;
         position: absolute;
@@ -762,7 +744,6 @@ footer{
         background-color: var(--white);
         left: 7px; 
     }
-    
     .icon-right {
         transition-duration: 0.3s;
         position: absolute;
@@ -772,7 +753,6 @@ footer{
         background-color: var(--white);
         left: 7px; 
     }
-
     .icon-right::before{
         transition-duration: 0.3s;
         position: absolute;
@@ -791,7 +771,6 @@ footer{
         content: "";
         top: -10px;
     }
-    
     .icon-right::after{
         transition-duration: 0.3s;
         position: absolute;
@@ -842,16 +821,15 @@ footer{
         display: flex;
         flex-direction: column;
         margin-bottom: 140px;
-
     }
     iframe{
         max-height: 600px;
+        min-height: 600px;
         padding: 0 20px;
     }
     .connect-section{
         display: flex;
         flex-direction: column;
-
     }
     .connect-wrapper {
         position: relative;
@@ -859,20 +837,15 @@ footer{
         width: 100%;
     }
     .connect__wrap {
-        /* position: relative;
-        bottom: inherit;
-        left: inherit; */
         border-radius: 0px 0px 20px 20px;
         min-height: 400px;
         max-width: 100%;
         transform: none;
         width: 100%;
     }
-   
     h2{
         font-size: 45px;
        }
-      
 }
 
 @media screen and (max-width:625px){
@@ -891,6 +864,10 @@ footer{
    .mb-s{
     margin-bottom: 70px;
    }
+   .about__bottom h2 {
+    max-width: 560px;
+    margin-bottom: 20px;
+}
    .mb-h{
     margin-bottom: 30px;
    }
@@ -899,9 +876,7 @@ footer{
    }
    h2{
     font-size: 24px;
-    margin-bottom: 30px;
    }
-  
    h3{
     font-size: 20px;
    }
@@ -917,6 +892,7 @@ footer{
    .work__wrapper h2{
     max-width: 230px;
     text-align: center;
+    margin-bottom: 0;
    }
    p{
     font-size: 12px;
@@ -928,13 +904,10 @@ footer{
         display: none;
     }
     .services__text {
-        padding: 30px;
+        padding: 40px 20px;
     }
     .services__text h2 {
         font-size: 20px;
-    }
-    .connect-section h2{
-        margin-bottom: 30px;
     }
     .btn__wraper {
         flex-wrap: nowrap;
@@ -942,8 +915,11 @@ footer{
         overflow: hidden;
         overflow-x: scroll;
         min-width: calc(100vw - 20px);
-        /* padding-left: 20px; */
         margin-left: 20px;
+    }
+    iframe{
+        max-height: 320px;
+        min-height: 320px;
     }
     .white-btn{
         white-space: nowrap;
@@ -957,6 +933,9 @@ footer{
     .adaptive-nav .nav__link{
         line-height: 24px;
         font-size: 16px;
+    }
+    .slider__container h2{
+        text-align: center;
     }
 }
 @media screen and (max-width:525px){
@@ -985,12 +964,12 @@ footer{
     }
 }
 @media screen and (max-width:475px) {
-    .line__top {
+    /* .line__top {
         top: -30%;
-    }
-    h3{
+    } */
+    /* h3{
         font-size: 22px;
-    }
+    } */
     .tab label {
         gap: 10px;
         padding: 15px 55px 15px 15px ;
